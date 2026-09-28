@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veyro — Match Rating</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Veyro</h1>
+    <p class="subtitle">Simple Soccer Match Rating</p>
+
+    <form id="rating-form">
+      <label>Position
+        <select id="position">
+          <option value="gk">Goalkeeper</option>
+          <option value="def">Defender</option>
+          <option value="mid" selected>Midfielder</option>
+          <option value="att">Attacker</option>
+        </select>
+      </label>
+
+      <div class="grid">
+        <label>Minutes<input id="minutes" type="number" min="0" max="120" value="90"></label>
+        <label>Passes<input id="passes" type="number" min="0" value="0"></label>
+        <label>Shots<input id="shots" type="number" min="0" value="0"></label>
+        <label>Duels Won<input id="duels" type="number" min="0" value="0"></label>
+        <label>Goals<input id="goals" type="number" min="0" value="0"></label>
+        <label>Assists<input id="assists" type="number" min="0" value="0"></label>
+        <label>Turnovers<input id="turnovers" type="number" min="0" value="0"></label>
+      </div>
+
+      <button type="submit">Calculate Rating</button>
+    </form>
+
+    <section id="result" class="result hidden">
+      <span>Your rating</span>
+      <strong id="rating">0</strong><span>/100</span>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

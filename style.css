@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f6f5; color: #18211d; }
+.app { width: min(680px, calc(100% - 32px)); margin: 50px auto; background: white; padding: 32px; border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,.08); }
+h1 { margin: 0; font-size: 36px; }
+.subtitle { margin-top: 6px; color: #68736e; }
+label { display: flex; flex-direction: column; gap: 7px; font-weight: 600; margin-top: 18px; }
+input, select { width: 100%; padding: 11px; border: 1px solid #ccd4d0; border-radius: 8px; font-size: 16px; background: white; }
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 16px; }
+button { width: 100%; margin-top: 24px; padding: 13px; border: 0; border-radius: 8px; background: #183f2f; color: white; font-size: 16px; font-weight: 700; cursor: pointer; }
+.result { margin-top: 28px; padding: 24px; text-align: center; background: #eef5f1; border-radius: 12px; }
+.result span { color: #68736e; }
+.result strong { display: block; font-size: 64px; line-height: 1; margin: 8px 0; }
+.hidden { display: none; }
+@media (max-width: 500px) { .app { margin: 20px auto; padding: 22px; } .grid { grid-template-columns: 1fr; } }
