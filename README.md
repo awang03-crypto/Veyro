@@ -1,24 +1,30 @@
-Veyro 
+# Veyro
+
 A simple sports match-rating calculator that turns player performance statistics into an easy-to-understand rating out of 100.
 
-Description
+## Description
 
 Veyro is a sports rating application designed to provide a simple way to calculate a player's match rating based on their statistics. The project is currently focused on building the core rating system. The goal is to start with the basic functionality and gradually expand Veyro with more sports, statistics, player profiles, match history, visualizations, and AI-powered analysis.
 
-Screenshots:
+## Screenshots
+
 <img width="1763" height="955" alt="image" src="https://github.com/user-attachments/assets/6c2ff86c-642e-4c5c-bc8d-95363701c4ab" />
 
-Dependencies
-Windows 10 or newer
-A web browser such as Chrome or Edge
-Built with HTML, CSS, and JavaScript
+## Dependencies
 
-Installing
-Download the Veyro project.
-Open the project folder.
-Open the Veyro project folder in a terminal.
+- Windows 10 or newer
+- A web browser such as Chrome or Edge
+- Built with HTML, CSS, and JavaScript
+
+## Installing
+
+1. Download the Veyro project.
+2. Open the project folder.
+3. Open the Veyro project folder in a terminal.
+
+## Executing program
+
 Start the application using:
-node server.js
 
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+```bash
+node server.js
